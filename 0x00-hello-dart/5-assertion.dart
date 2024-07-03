@@ -1,7 +1,4 @@
-void main(List<String> args) {
-    /*
-  Write Your code below 
-   */
+void main(List<int> args) {
   int nb = int.parse(args[0]);
   assert(nb >= 80, 'The score must be bigger or equal to 80');
   print('You passed');
