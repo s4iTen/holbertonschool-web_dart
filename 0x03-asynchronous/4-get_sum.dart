@@ -13,7 +13,8 @@ Future<String> calculateTotal() async {
             String price = await fetchProductPrice(product);
             total += double.parse(price);
         }
-        return '$total';
+        const decimalTotal = total.toStringAsFixed(2);
+        return '$decimalTotal';
     } catch (e) {
         return 'error caught: $e';
     }
