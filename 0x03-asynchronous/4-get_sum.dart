@@ -15,6 +15,6 @@ Future<String> calculateTotal() async {
         }
         return '$total';
     } catch (e) {
-        return 'error caught: $e';
+        return -1;
     }
 }
