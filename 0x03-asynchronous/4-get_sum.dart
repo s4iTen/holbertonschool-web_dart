@@ -14,7 +14,7 @@ Future<String> calculateTotal() async {
             total += double.parse(price);
         }
         return '$total';
-    } catch (e) {
+    } catch {
         return -1;
     }
 }
